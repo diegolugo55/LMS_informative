@@ -21,8 +21,7 @@ body {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-  border: 2px solid black;
+  margin: 50px auto;
 
   display: flex;
   justify-content: center;
@@ -80,7 +79,7 @@ body {
 
 /* Information boxes */
 .info-img-box {
-  border: 2px solid black;
+  background: rgb(109, 173, 109);
   margin: 50px auto;
 
   display: grid; 
@@ -91,16 +90,22 @@ body {
     ". ."; 
   max-width: 1000px; 
   
+  box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
 }
 .info-img-box-two {
   grid-template-columns: .75fr 1.25fr; 
 
 }
 .info-box {
-  border: 2px solid black;
+  background: rgb(109, 173, 109);
   padding: 20px;
-
-
+}
+#need {
+  box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
 }
 .img-box {
   border: 2px solid red;
@@ -120,14 +125,7 @@ body {
   .mySlides img{
     width: 20rem
   }
-}
-@media only screen and (max-width: 500px) {
- .text {font-size: 11px}
- .mySlides img {
-   width: 15rem;
- }
-
-
+  
  .info-img-box {
   display: grid; 
   grid-template-columns: 1fr; 
@@ -136,8 +134,14 @@ body {
   grid-template-areas: 
     "."
     "."; 
-  
-  
+  }
 }
+@media only screen and (max-width: 500px) {
+ 
+ .mySlides img {
+   width: 15rem;
+ }
+
+
  
 }
