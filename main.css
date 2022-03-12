@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Verdana, sans-serif; 
+}
+
+.nav {
+  background: rgb(2, 39, 2);
+  padding: 20px 0;
+}
+
+.nav h4 {
+  color: white;
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: 2px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow-container img {
+  display: block;
+  width: 100%;
+}
+.mySlides {
+  display: none;
+  position: absolute;
+}
+.mySlides img {
+  margin: 0 auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Information boxes */
+.info-img-box {
+  border: 2px solid black;
+  margin: 50px auto;
+
+  display: grid; 
+  grid-template-columns: 1.25fr .75fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". ."; 
+  max-width: 1000px; 
+  
+}
+.info-img-box-two {
+  grid-template-columns: .75fr 1.25fr; 
+
+}
+.info-box {
+  border: 2px solid black;
+  padding: 20px;
+
+
+}
+.img-box {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-img-box img {
+  display: block;
+  width: 300px;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+ .text {font-size: 11px}
+ 
+}
