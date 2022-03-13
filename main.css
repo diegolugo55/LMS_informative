@@ -11,10 +11,16 @@ body {
   background: rgb(2, 39, 2);
   padding: 20px 0;
 }
-
 .nav h4 {
   color: white;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  line-height: 2;
+  margin-top: 50px;
+  padding: 0 15px
 }
 
 /* Slideshow container */
@@ -108,7 +114,6 @@ body {
   -moz-box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
 }
 .img-box {
-  border: 2px solid red;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -119,7 +124,7 @@ body {
   width: 300px;
 }
 .support {
-  border: 2px solid rgb(109, 173, 109);
+  /* border: 2px solid rgb(109, 173, 109); */
   color: rgb(109, 173, 109);
   margin: 0 auto;
   max-width: 1000px; 
@@ -137,6 +142,25 @@ body {
   display: block;
   margin: 50px;
   font-size: 10rem;
+  animation: icons 10s linear infinite;
+}
+
+.c-img-container {
+  border-radius: 100%;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+#c-img {
+  height: 500px;
+  object-fit: contain;
+}
+
+footer {
+  height: 200px;
+  background: rgb(2, 39, 2);
+  margin-top: 50px;
 }
 
 
@@ -163,6 +187,22 @@ body {
    width: 15rem;
  }
 
+ .c-img-container {
+   height: 300px;
+   width: 300px;
+ }
+
 
  
+}
+@keyframes icons {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
