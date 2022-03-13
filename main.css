@@ -109,6 +109,7 @@ body {
 }
 .img-box {
   border: 2px solid red;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,6 +117,26 @@ body {
 .info-img-box img {
   display: block;
   width: 300px;
+}
+.support {
+  border: 2px solid rgb(109, 173, 109);
+  color: rgb(109, 173, 109);
+  margin: 0 auto;
+  max-width: 1000px; 
+}
+.support h3 {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.support i {
+  display: block;
+  margin: 50px;
+  font-size: 10rem;
 }
 
 
