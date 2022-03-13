@@ -161,6 +161,16 @@ footer {
   height: 200px;
   background: rgb(2, 39, 2);
   margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer i {
+  color: white;
+  font-size: 8rem;
 }
 
 
