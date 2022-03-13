@@ -107,6 +107,7 @@ h1 {
 .info-box {
   background: rgb(109, 173, 109);
   padding: 20px;
+  text-align: justify;
 }
 #need {
   box-shadow: 10px 10px 5px 0px rgba(109,173,109,0.75);
